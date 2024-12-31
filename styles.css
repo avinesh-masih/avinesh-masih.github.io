@@ -351,26 +351,51 @@ nav a:hover::after {
     }
 }
 
-/* Contact Form */
-.contact-form {
-    display: grid;
-    gap: 15px;
+/* Connect with Me Section */
+#connect {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--background-color);
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+#connect h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--primary-color);
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: var(--secondary-color);
-    outline: none;
-    box-shadow: 0 0 5px rgba(52,152,219,0.5);
+#connect p {
+    font-size: 1.2em;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+/* Social Media Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+    
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: filter 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+    filter: brightness(1.2);
+    
 }
 
 /* Hover Effects for Skills */
@@ -431,3 +456,22 @@ nav a:hover::after {
         transform: translateY(0);
     }
 }
+
+/* Footer Styles */
+footer.footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10; /* Keeps footer above the content */
+}
+
+footer.footer p {
+    margin: 0;
+    font-style: italic;
+}
+
