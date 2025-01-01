@@ -458,16 +458,20 @@ nav a:hover::after {
 }
 
 /* Footer Styles */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
 footer.footer {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 10px 0;
     font-size: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 10; /* Keeps footer above the content */
 }
 
 footer.footer p {
