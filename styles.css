@@ -149,7 +149,7 @@ header:hover::before {
 }
 .header-title:hover {
     transform: scale(1.05); /* Slight enlargement on hover */
-    color: var(--accent-color); /* Changes color on hover */
+    color: burlywood; /* Changes color on hover */
 }
 
 
@@ -194,6 +194,24 @@ nav a:hover::after {
     width: 100%; /* Underline animation on hover */
 }
 
+/* Resume Download Button */
+nav .resume-download-btn {
+    padding: 10px 10px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none; /* Remove border */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+nav .resume-download-btn:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
 /* Sections */
 .section {
     background-color: rgb(255, 255, 255);
@@ -211,23 +229,29 @@ nav a:hover::after {
 
 /*resume button*/
 .resume-download-btn {
-    position: absolute;
-    top: 20px; /* Adjust the value as needed */
-    right: 20px; /* Adjust the value as needed */
+    position: fixed;
+    top: 4.5px;
+    right: 20px;
     padding: 10px 20px;
-    background-color: rgb(255, 231, 231);
+    background-color: rgb(255, 223, 255);
     color: var(--light-text-color);
     text-decoration: none;
     font-size: 1.1rem;
-    border-radius: 152px;
-    transition: background-color 0.3s ease;
-    border: 2px solid var(--secondary-color);
-    z-index: 1000; /* Ensures it's above other elements */
+    border-radius: 100px;
+    transition: all 0.3s ease;
+    border: 2px solid ;
+    z-index: 1000;
 }
 
 .resume-download-btn:hover {
     background-color: var(--secondary-color);
     color: var(--dark-text-color);
+}
+.resume-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0px;
+    transition: transform 0.3s ease;
 }
 
 /* Skills */
