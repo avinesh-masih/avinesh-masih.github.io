@@ -211,9 +211,23 @@
         
         
     </div>
+    <section id="special-message" class="section">
+        <h2>Special Thanks</h2>
+        <button id="reveal-message-btn" class="special-btn">Click for a Special Message</button>
+        <p id="thank-you-message" class="hidden-message">
+            Thank you for visiting my portfolio! Your support and interest mean the world to me. Keep striving for excellence and success!
+        </p>
+    </section>    
     <footer class="footer">
         <p>© 2025 AVINESH MASIH. Made with ❤️ | All Rights Reserved</p>
     </footer>
     
 </body>
+<script>
+    document.getElementById('reveal-message-btn').addEventListener('click', function() {
+        const message = document.getElementById('thank-you-message');
+        message.classList.toggle('visible');
+    });
+</script>
+
 </html>
