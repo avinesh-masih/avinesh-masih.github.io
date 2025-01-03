@@ -209,6 +209,27 @@ nav a:hover::after {
     box-shadow: 0 10px 15px rgba(0,0,0,0.2);
 }
 
+/*resume button*/
+.resume-download-btn {
+    position: absolute;
+    top: 20px; /* Adjust the value as needed */
+    right: 20px; /* Adjust the value as needed */
+    padding: 10px 20px;
+    background-color: rgb(255, 231, 231);
+    color: var(--light-text-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 152px;
+    transition: background-color 0.3s ease;
+    border: 2px solid var(--secondary-color);
+    z-index: 1000; /* Ensures it's above other elements */
+}
+
+.resume-download-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--dark-text-color);
+}
+
 /* Skills */
 .skills {
     display: flex;
@@ -467,36 +488,6 @@ main {
     flex: 1;
 }
 
-/* Button Styling */
-.special-btn {
-    background-color: var(--primary-color);
-    color: var(--text-light);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.special-btn:hover {
-    background-color: var(--primary-hover-color);
-}
-
-/* Hidden Message Styling */
-.hidden-message {
-    display: none;
-    margin-top: 15px;
-    font-size: 18px;
-    color: var(--text-dark);
-    text-align: center;
-}
-
-/* Visible Message */
-.hidden-message.visible {
-    display: block;
-}
 
 footer.footer {
     background-color: var(--primary-color);
