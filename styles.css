@@ -155,24 +155,28 @@ header:hover::before {
 
 /* Navigation Bar */
 nav {
-    background-color: rgba(57, 49, 49, 0.8); /* Transparent background with slight opacity */
-    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background with slight opacity */
+    padding: 18px;
     position: fixed; /* Fix the navbar at the top */
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2); /* Subtle shadow for separation */
+    box-shadow: 0 25px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for separation */
     z-index: 100; /* Make sure it stays on top */
     backdrop-filter: blur(5px); /* Optional: Adds a blur effect behind the navbar */
+    display: flex;
+    justify-content: space-between; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
 }
 
 nav a {
-    color: white;
+    color: rgb(0, 0, 0);;
     text-decoration: none;
     margin: 0 15px;
     font-size: 1.1rem;
     position: relative;
     transition: color 0.3s ease;
+
 }
 
 nav a::after {
@@ -182,21 +186,23 @@ nav a::after {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     transition: width 0.3s ease;
 }
 
 nav a:hover {
-    color: var(--accent-color); /* Hover color */
+    color: rgb(0, 166, 255) /* Hover color */
 }
 
 nav a:hover::after {
     width: 100%; /* Underline animation on hover */
 }
 
+
+
 /* Resume Download Button */
 nav .resume-download-btn {
-    padding: 10px 10px;
+    padding: 10px 20px;
     background-color: var(--secondary-color);
     color: white;
     text-decoration: none; /* Remove underline */
@@ -205,12 +211,70 @@ nav .resume-download-btn {
     border: none; /* Remove border */
     transition: background-color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
+    position: absolute; /* Absolute positioning */
+    right: 20px; /* Align to the right side */
+    top: 50%; /* Vertically center the button */
+    transform: translateY(-50%); /* Adjust for perfect centering */
 }
 
 nav .resume-download-btn:hover {
     background-color: var(--accent-color);
-    transform: scale(1.05); /* Slight enlargement on hover */
+    transform: scale(1.05) translateY(-50%); /* Slight enlargement on hover */
 }
+
+
+
+/* Social Media Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.social-icon {
+    width: 30px; /* Reduced size of the icons */
+    height: 30px; /* Reduced size of the icons */
+    transition: filter 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+    filter: brightness(1.2);
+}
+
+/* Social Links - Centered */
+nav .social-links {
+    display: flex;
+    justify-content: center; /* Center social links */
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Perfectly center the social links */
+}
+
+nav .social-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+nav .social-icon {
+    width: 30px; /* Reduced size of the icons */
+    height: 30px; /* Reduced size of the icons */
+    transition: filter 0.3s ease;
+}
+
+nav .social-link:hover .social-icon {
+    filter: brightness(1.2);
+}
+
 
 /* Sections */
 .section {
@@ -227,20 +291,19 @@ nav .resume-download-btn:hover {
     box-shadow: 0 10px 15px rgba(0,0,0,0.2);
 }
 
-/*resume button*/
+
+
+/* Resume Button in Navbar */
 .resume-download-btn {
-    position: fixed;
-    top: 4.5px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: rgb(255, 223, 255);
-    color: var(--light-text-color);
+    padding: 10px 10px;
+    background-color: var(--secondary-color);
+    color: white;
     text-decoration: none;
-    font-size: 1.1rem;
-    border-radius: 100px;
-    transition: all 0.3s ease;
-    border: 2px solid ;
-    z-index: 1000;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
 }
 
 .resume-download-btn:hover {
@@ -419,7 +482,7 @@ nav .resume-download-btn:hover {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 2px;
 }
 
 .social-link {
@@ -502,6 +565,8 @@ nav .resume-download-btn:hover {
     }
 }
 
+
+
 /* Footer Styles */
 .content-wrapper {
     display: flex;
@@ -512,17 +577,49 @@ main {
     flex: 1;
 }
 
-
 footer.footer {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px ;
     font-size: 1rem;
+    width: 100%; /* Ensure the footer spans the full width */
+    position: relative; /* Change to relative */
+    bottom: 0; /* Align it to the bottom */
+    left: 0; /* Align it to the left */
 }
 
 footer.footer p {
-    margin: 0;
+    margin: 1px;
     font-style: italic;
 }
 
+/* Contact Section */
+.contact-section {
+    background-color: #f8f8f8; /* Light background color */
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Title for Contact Section */
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Styling the Form Container */
+.google-form-container {
+    width: 100%;
+    max-width: 900px; /* Limit the width */
+    margin: 0 auto; /* Center the form */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .google-form-container iframe {
+        height: 500px; /* Adjust height on smaller screens */
+    }
+}
