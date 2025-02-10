@@ -380,17 +380,7 @@ nav a:hover::after {
     overflow: hidden;
 }
 
-.certification:hover::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: rgba(255, 255, 255, 0.2);
-    transform: rotate(45deg);
-    transition: all 0.5s ease;
-}
+
 
 .certification:hover::before {
     top: -50%;
