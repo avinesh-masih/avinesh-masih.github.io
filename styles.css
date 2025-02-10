@@ -538,15 +538,19 @@ nav a:hover::after {
 
 /* Hover Effects for Skills */
 .skills {
-    display: none;
-    margin-top: 10px;
-    opacity: 0;
-    transition: opacity 0.6s ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
-.skill-category:hover + .skills {
-    display: block;
-    opacity: 1;
+.skills img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .skill-category {
@@ -846,7 +850,7 @@ footer.footer p {
 
 /* Skills Section */
 #skills:hover {
-    transform: scale(1.02); /* Slightly enlarge on hover */
+    transform: scale(1.01); /* Slightly enlarge on hover */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
     position: relative;
     overflow: hidden;
@@ -960,6 +964,37 @@ footer.footer p {
         39% 35%
     );
     animation: fall 3s linear infinite;
+}
+
+/* ...existing code... */
+
+/* Skills Table */
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.skills-table th, .skills-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.skills-table th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+.skills-table td img {
+    margin: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-table td img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* ...existing code... */
