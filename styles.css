@@ -914,6 +914,10 @@ footer.footer p {
 
 /* ...existing code... */
 
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 .download-resume {
     display: flex;
     align-items: center;
