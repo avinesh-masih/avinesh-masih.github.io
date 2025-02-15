@@ -78,7 +78,7 @@ p.subtitle {
 
 /* Header Styles */
 header {
-    background-image: url('icon.pack/header_banner.svg'); /* Add header banner image */
+    background-image: url('icon.pack/banner_header.svg'); /* Add header banner image */
     background-size: cover;
     background-position: center;
     background-color: transparent; /* Make background transparent */
