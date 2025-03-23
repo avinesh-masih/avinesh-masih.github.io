@@ -22,293 +22,334 @@
     <meta name="author" content="Avinesh Masih">
     <meta name="theme-color" content="#2c3e50">
     <title>Avinesh Masih Portfolio - Data Analyst | Machine Learning & Business Strategy</title>
-    <link rel="stylesheet" href="styles.css" media="screen" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+    <link rel="stylesheet" href="style.css" media="screen" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
 </head>
-<body>
-    <div class="star"></div>
-<div class="star" style="left: 20%; animation-delay: 0.5s;"></div>
-<div class="star" style="left: 40%; animation-delay: 1s;"></div>
-<div class="star" style="left: 60%; animation-delay: 1.5s;"></div>
-<div class="star" style="left: 80%; animation-delay: 2s;"></div>
-<div class="star" style="left: 10%; top: 20%; animation-delay: 0.5s;"></div>
-<div class="star" style="left: 30%; top: 20%; animation-delay: 1s;"></div>
-<div class="star" style="left: 50%; top: 20%; animation-delay: 1.5s;"></div>
-    <header>
-        <h1 class="header-title">AVINESH MASIH</h1> <!-- New title style -->
-        <p class="subtitle-description">Helping businesses unlock the power of data with actionable insights</p>
-        <p class="subtitle" style="font-size: 1rem;">Data Analyst | Machine Learning Enthusiast | Business Analytics Strategist</p>
-    </header>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-bar">
-            <button class="menu" onclick="toggleMenu()" aria-label="Main Menu">
-                <svg width="30" height="30" viewBox="0 0 100 100">
-                    <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                    <path class="line line2" d="M 20,50 H 80" />
-                    <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                </svg>
-            </button>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#certifications">Certifications</a>
-                <a href="#contact">Contact</a>
-                <a href="#support">Support Me</a>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#support">Support Me</a></li>
+            <i class="fas fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>DATA ANALYST</p>
+          <h1>Hi, I'm <span>AVINESH MASIH</span><br />From Lucknow</h1>
+        </div>
+      </div>
+    </div>
+    <!----about----->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+                I’m Avinesh Masih, a passionate Data Analyst with experience in transforming 
+                data into actionable insights. Specializing in statistical analysis,
+                 machine learning, and business intelligence, I use tools like Python, 
+                 SQL, Power BI, and AWS to solve complex data challenges. 
+                 I’m driven by the desire to help businesses make data-informed decisions and
+                  uncover hidden patterns that fuel growth. Always eager to learn, I keep up 
+                  with the latest trends in data science and machine learning.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span>JAN 2025 - Feb 2025</span><br />Data Science and Machine Learning Intern
+                  Edureka • Internship
+                </li>
+                <li>
+                  <span>May 2023 - Jun 2023</span><br />NAS ENTERPRISES LUCKNOW • Internship
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>2024</span><br />Data Analytics from PWSkills
+                </li>
+
+                <li><span>2024</span><br />B.com(Hons.) from University of Lucknow</li>
+                <li><span>2021</span><br />Secondary Education from SHHSS</li>
+                <li><span>2019</span><br />Higer Secondary Education from SHHSS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----skills-----> 
+    <div class="tab-contents active-tab" id="skills">
+      <div class="container">
+        <h1 class="sub-title">My Skills</h1><BR><BR>
+        <div class="skills-list">
+          <div class="badge"><i class="fab fa-python"></i> Python</div>
+          <div class="badge"><i class="fas fa-database"></i> SQL</div>
+          <div class="badge"><i class="fab fa-html5"></i> HTML</div>
+          <div class="badge"><i class="fab fa-css3"></i> CSS</div>
+          <div class="badge"><i class="fas fa-flask"></i> Flask</div>
+
+          <div class="badge"><i class="fas fa-database"></i> MySQL</div>
+          <div class="badge"><i class="fas fa-leaf"></i> MongoDB</div>
+          <div class="badge"><i class="fas fa-database"></i> PostgreSQL</div>
+
+          <div class="badge"><i class="fas fa-chart-line"></i> EDA</div>
+          <div class="badge"><i class="fas fa-tools"></i> Feature Engineering</div>
+          <div class="badge"><i class="fas fa-chart-pie"></i> Statistics</div>
+          <div class="badge"><i class="fas fa-broom"></i> Data Cleaning</div>
+          <div class="badge"><i class="fas fa-exchange-alt"></i> Data Wrangling</div>
+
+          <div class="badge"><i class="fas fa-chart-bar"></i> Regression Models</div>
+          <div class="badge"><i class="fas fa-magic"></i> PCA</div>
+          <div class="badge"><i class="fas fa-calendar-alt"></i> Time Series</div>
+          <div class="badge"><i class="fas fa-project-diagram"></i> DBSCAN</div>
+          <div class="badge"><i class="fas fa-chart-area"></i> Predictive Analytics</div>
+
+          <div class="badge"><i class="fas fa-file-excel"></i> Excel</div>
+          <div class="badge"><i class="fas fa-chart-bar"></i> Power BI</div>
+          <div class="badge"><i class="fab fa-aws"></i> AWS</div>
+          <div class="badge"><i class="fab fa-google"></i> Google Tag Manager</div>
+
+          <div class="badge"><i class="fas fa-chart-line"></i> Data Visualization</div>
+          <div class="badge"><i class="fas fa-book-open"></i> Data Storytelling</div>
+          <div class="badge"><i class="fab fa-npm"></i> NumPy</div>
+          <div class="badge"><i class="fas fa-table"></i> Pandas</div>
+
+          <div class="badge"><i class="fas fa-search"></i> SEO</div>
+          <div class="badge"><i class="fas fa-bullhorn"></i> Digital Marketing</div>
+          <div class="badge"><i class="fas fa-chart-line"></i> Growth Strategies</div>
+
+          <div class="badge"><i class="fas fa-wallet"></i> Financial Services</div>
+          <div class="badge"><i class="fas fa-calculator"></i> Tally ERP</div>
+          <div class="badge"><i class="fas fa-landmark"></i> GST</div>
+
+          <div class="badge"><i class="fab fa-git"></i> Git</div>
+          <div class="badge"><i class="fas fa-book"></i> Jupyter Notebook</div>
+          <div class="badge"><i class="fab fa-markdown"></i> Markdown</div>
+          <div class="badge"><i class="fas fa-laptop"></i> Microsoft Office</div>
+          <div class="badge"><i class="fa-solid fa-photo-film"></i> Canva</div>
+
+          <div class="badge"><i class="fas fa-brain"></i> Hypothesis Testing</div>
+          <div class="badge"><i class="fas fa-calculator"></i> Bayesian Statistics</div>
+          <div class="badge"><i class="fas fa-lightbulb"></i> Adaptability</div>
+        </div>
+      </div>
+    </div>
+    <!----portfolio----->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="icon.pack/github_icon.svg" />
+            <div class="layer">
+              <h3>Automated Employee
+                Report Generation System</h3>
+              <p>
+                The Automated Employee
+                Report Generation System is a
+                Python-based tool designed to
+                streamline the creation of
+                detailed employee reports from
+                Excel data.
+              </p>
+              <a href="https://github.com/avinesh-masih/employee-report-generator">
+                <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="icon.pack/github_icon.svg" />
+            <div class="layer">
+              <h3>Spam Detection System</h3>
+              <p>
+                Built a Python-based machine
+                learning model to identify and
+                classify spam messages.
+              </p>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="icon.pack/github_icon.svg" />
+            <div class="layer">
+              <h3>Airline Data Analysis
+                (AWS)</h3>
+              <p>
+                Processed and visualized
+                operational data to optimize
+                fl ight sched ules.
+              </p>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="icon.pack/github_icon.svg" />
+            <div class="layer">
+              <h3>Superstore Dashboard
+                (Power Bl)</h3>
+              <p>
+                Created a comprehensive
+                dashboard for analyzing sales
+                trends and business growth
+                opportunities.
+              </p>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="icon.pack/github_icon.svg" />
+            <div class="layer">
+              <h3>Census Data Analysis
+                (SQL)</h3>
+              <p>
+                Explored demographic factors
+                affecting living standards in the
+                US.
+              </p>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
-    </nav>
-
-    <!-- Main Content -->
-    <div class="container">
-        <section id="about" class="section fade-in">
-            <h1>About Me</h1>
-            <div class="about-card">  
-                <p>I’m Avinesh Masih, a passionate Data Analyst with experience in transforming data into actionable insights. Specializing in statistical analysis, machine learning, and business intelligence, I use tools like Python, SQL, Power BI, and AWS to solve complex data challenges. I’m driven by the desire to help businesses make data-informed decisions and uncover hidden patterns that fuel growth. Always eager to learn, I keep up with the latest trends in data science and machine learning.</p>
-                <a href="certificates/Avinesh_Masih_Resume.pdf" target="_blank" class="download-resume">
-                    <img src="https://img.shields.io/badge/Download-Resume-blue?style=for-the-badge" alt="Download Resume" class="download-icon">
-
-                </a>
+      </div>
+    </div>
+        <!----certificates-----> 
+        <div id="certificates">
+          <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <div class="services-list">
+              <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Data Analytics
+                  Certification</h2>
+                <p>
+                  Issued by PW Skills
+                </p>
+                <a href="#" class="badge-button" target="_blank">View Certificate</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-file-invoice"></i>
+                <h2>GST Filing and
+                  Tax Compliance</h2>
+                <p>
+                  Issued by NAS
+                  ENTERPRISES
+                </p>
+                <a href="certificates/NAS-internship.pdf" class="badge-button" target="_blank">View Certificate</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-atom"></i>
+                <h2>Data Science and
+                  Machine
+                  Learning Intern</h2>
+                <p>
+                  Issued by Edureka
+                </p>
+                <a href="certificates/Edureka - Internship Certificate.pdf" class="badge-button" target="_blank">View Certificate</a>
+              </div>
             </div>
-        </section>
-        <section id="skills" class="section fade-in">
-    <h2 class="section-title">Skills</h2>
-    <table class="skills-table">
-        <thead>
-            <tr>
-                <th>🚀 Category</th>
-                <th>🎯 Skills</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>👨‍💻 Programming Languages</strong></td>
-                <td>
-                    <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python">
-                    <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML">
-                    <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" alt="CSS">
-                    <img src="https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white" alt="Flask">
-                </td>
-            </tr>
-            <tr>
-                <td><strong>💼 Database Management</strong></td>
-                <td>
-                    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" alt="MySQL">
-                    <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white" alt="MongoDB">
-                </td>
-            </tr>
-            <tr>
-                <td><strong>📈 Data Analytics</strong></td>
-                <td>
-                    <img src="https://img.shields.io/badge/EDA-FF6F00?style=flat&logo=data&logoColor=white" alt="EDA">
-                    <img src="https://img.shields.io/badge/Feature%20Engineering-4CAF50?style=flat&logo=data&logoColor=white" alt="Feature Engineering">
-                    <img src="https://img.shields.io/badge/Statistics-9C27B0?style=flat&logo=data&logoColor=white" alt="Statistics">
-                    <img src="https://img.shields.io/badge/Data%20Cleaning-FFC107?style=flat&logo=data&logoColor=white" alt="Data Cleaning">
-                </td>
-            </tr>
-            <tr>
-                <td><strong>🤖 Machine Learning</strong></td>
-                <td>
-                    <img src="https://img.shields.io/badge/Regression%20Models-2196F3?style=flat&logo=data&logoColor=white" alt="Regression Models">
-                    <img src="https://img.shields.io/badge/SVM-FF5722?style=flat&logo=data&logoColor=white" alt="SVM">
-                    <img src="https://img.shields.io/badge/Clustering%20Algorithms-795548?style=flat&logo=data&logoColor=white" alt="Clustering Algorithms">
-                    <img src="https://img.shields.io/badge/Decision%20Trees-4CAF50?style=flat&logo=data&logoColor=white" alt="Decision Trees">
-                    <img src="https://img.shields.io/badge/Ensemble%20Techniques-607D8B?style=flat&logo=data&logoColor=white" alt="Ensemble Techniques">
-                    <img src="https://img.shields.io/badge/Bagging%20and%20Boosting-FF9800?style=flat&logo=data&logoColor=white" alt="Bagging and Boosting">
-                    <img src="https://img.shields.io/badge/Time%20Series%20Analysis-3F51B5?style=flat&logo=data&logoColor=white" alt="Time Series Analysis">
-                    <img src="https://img.shields.io/badge/DBSCAN-9C27B0?style=flat&logo=data&logoColor=white" alt="DBSCAN">
-                    <img src="https://img.shields.io/badge/PCA-00BCD4?style=flat&logo=data&logoColor=white" alt="PCA">
-                </td>
-            </tr>
-            <tr>
-                <td><strong>⚙️ Data Tools</strong></td>
-                <td>
-                    <img src="https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoft-excel&logoColor=white" alt="Excel">
-                    <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=power-bi&logoColor=black" alt="Power BI">
-                    <img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white" alt="AWS">
-                </td>
-            </tr>
-            <tr>
-                <td><strong>📊 Visualization and Reporting</strong></td>
-                <td>
-                    <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=power-bi&logoColor=black" alt="Power BI">
-                    <img src="https://img.shields.io/badge/AWS%20QuickSight-232F3E?style=flat&logo=amazon-aws&logoColor=white" alt="AWS QuickSight">
-                    <img src="https://img.shields.io/badge/Matplotlib-3776AB?style=flat&logo=python&logoColor=white" alt="Matplotlib">
-                    <img src="https://img.shields.io/badge/Seaborn-3776AB?style=flat&logo=python&logoColor=white" alt="Seaborn">
-                    <img src="https://img.shields.io/badge/Plotly-3F4F75?style=flat&logo=plotly&logoColor=white" alt="Plotly">
-                    <img src="https://img.shields.io/badge/Data%20Visualization-FF6F00?style=flat&logo=data&logoColor=white" alt="Data Visualization">
-                </td>
-            </tr>
-            <tr>
-                <td><strong>🧑‍🔧 Other Technical Skills</strong></td>
-                <td>
-                    <img src="https://img.shields.io/badge/Data%20Cleaning-FFC107?style=flat&logo=data&logoColor=white" alt="Data Cleaning">
-                    <img src="https://img.shields.io/badge/Web%20APIs-FF5722?style=flat&logo=api&logoColor=white" alt="Web APIs">
-                    <img src="https://img.shields.io/badge/ETL%20Pipelines-4CAF50?style=flat&logo=data&logoColor=white" alt="ETL Pipelines">
-                    <img src="https://img.shields.io/badge/Numpy-013243?style=flat&logo=numpy&logoColor=white" alt="Numpy">
-                    <img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white" alt="Pandas">
-                </td>
-            </tr>
-            <tr>
-                <td><strong>🤳 Business & Marketing Skills</strong></td>
-                <td>
-                    <img src="https://img.shields.io/badge/SEO-4CAF50?style=flat&logo=seo&logoColor=white" alt="SEO">
-                    <img src="https://img.shields.io/badge/Digital%20Marketing-FF5722?style=flat&logo=marketing&logoColor=white" alt="Digital Marketing">
-                    <img src="https://img.shields.io/badge/Business%20Growth-9C27B0?style=flat&logo=business&logoColor=white" alt="Business Growth">
-                    <img src="https://img.shields.io/badge/Social%20Media%20Marketing-3F51B5?style=flat&logo=marketing&logoColor=white" alt="Social Media Marketing">
-                </td>
-            </tr>
-            <tr>
-                <td><strong>💲 Financial & Management Skills</strong></td>
-                <td>
-                    <img src="https://img.shields.io/badge/Financial%20Services-4CAF50?style=flat&logo=finance&logoColor=white" alt="Financial Services">
-                    <img src="https://img.shields.io/badge/Tally%20ERP-FF5722?style=flat&logo=erp&logoColor=white" alt="Tally ERP">
-                    <img src="https://img.shields.io/badge/GST-9C27B0?style=flat&logo=tax&logoColor=white" alt="GST">
-                    <img src="https://img.shields.io/badge/Account%20Management-3F51B5?style=flat&logo=management&logoColor=white" alt="Account Management">
-                </td>
-            </tr>
-            <tr>
-                <td><strong>📎 Tools & General Skills</strong></td>
-                <td>
-                    <img src="https://img.shields.io/badge/Microsoft%20Office-D83B01?style=flat&logo=microsoft-office&logoColor=white" alt="Microsoft Office">
-                    <img src="https://img.shields.io/badge/Canva-00C4CC?style=flat&logo=canva&logoColor=white" alt="Canva">
-                    <img src="https://img.shields.io/badge/Research%20Skills-4CAF50?style=flat&logo=research&logoColor=white" alt="Research Skills">
-                    <img src="https://img.shields.io/badge/Statistical%20Analysis-FF5722?style=flat&logo=statistics&logoColor=white" alt="Statistical Analysis">
-                    <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" alt="Git">
-                    <img src="https://img.shields.io/badge/Jupyter%20Notebook-F37626?style=flat&logo=jupyter&logoColor=white" alt="Jupyter Notebook">
-                    <img src="https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white" alt="Markdown">
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-        <section id="projects" class="section fade-in">
-            <h2>My Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <h3>Spam Detection System</h3>
-                    <p>Built a Python-based machine learning model to identify and classify spam messages.</p>
-                    <a href="https://github.com/avinesh-masih/spam-detection" target="_blank" class="repo-link">
-                        <img src="icon.pack/github_icon.svg" alt="GitHub Repository" class="repo-icon">
-                        <span>View Repository</span>
-                    </a>
-                </div>
-                <div class="project">
-                    <h3>Airline Data Analysis (AWS)</h3>
-                    <p>Processed and visualized operational data to optimize flight schedules.</p>
-                    <a href="https://github.com/avinesh-masih/airline-data-analysis" target="_blank" class="repo-link">
-                        <img src="icon.pack/github_icon.svg" alt="GitHub Repository" class="repo-icon">
-                        <span>View Repository</span>
-                    </a>
-                </div>
-                <div class="project">
-                    <h3>Superstore Dashboard (Power BI)</h3>
-                    <p>Created a comprehensive dashboard for analyzing sales trends and business growth opportunities.</p>
-                    <a href="https://github.com/avinesh-masih/superstore-dashboard" target="_blank" class="repo-link">
-                        <img src="icon.pack/github_icon.svg" alt="GitHub Repository" class="repo-icon">
-                        <span>View Repository</span>
-                    </a>
-                </div>
-                <div class="project">
-                    <h3>Census Data Analysis (SQL)</h3>
-                    <p>Explored demographic factors affecting living standards in the U.S.</p>
-                    <a href="https://github.com/avinesh-masih/census-data-analysis" target="_blank" class="repo-link">
-                        <img src="icon.pack/github_icon.svg" alt="GitHub Repository" class="repo-icon">
-                        <span>View Repository</span>
-                    </a>
-                </div>
-                <div class="project">
-                    <h3>Automated Employee Report Generation System</h3>
-                    <p>The Automated Employee Report Generation System is a Python-based tool designed to streamline the creation of detailed employee reports from Excel data.</p>
-                    <a href="https://github.com/avinesh-masih/employee-report-generator" target="_blank" class="repo-link">
-                        <img src="icon.pack/github_icon.svg" alt="GitHub Repository" class="repo-icon">
-                        <span>View Repository</span>
-                    </a>
-                </div>
+          </div>
+        </div>
+    <!----contact----->
+    <br><br>
+    <div id="contact" class="contact-section fade-in">
+      <div class="container">
+        <div class="row">
+          <div class="contect-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="social-icons">
+              <a href="mailto:skmasih11@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://github.com/avinesh-masih"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/avinesh-masih"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <section id="support" class="support-section fade-in">
-                <h3>Support My Work</h3>
-                <p>If you find my projects useful, consider sponsoring me to help me create more!</p>
-                <div class="support-links">
-                    <a href="https://paypal.me/AVINESHMASIH" target="_blank">
-                        <img src="icon.pack/paypal_icon.svg" alt="Support via PayPal" class="support-image">
-                    </a>
-                    <iframe src="https://github.com/sponsors/avinesh-masih/button" title="Sponsor avinesh-masih" height="40" width="140" style="border: 0; border-radius: 6px;"></iframe>
-                </div>
-            </section>
-        </section>
-        
-        <section id="certifications" class="section fade-in">
-            <h2>Professional Certifications</h2>
-            <div class="certifications">
-                <div class="certification">
-                    <img src="icon.pack/PWSkills.png" alt="PWSkills_logo" class="certification-logo" style="width: 100px; height: auto;">
-                    <h3>Data Analytics Certification</h3>
-                    <p>Issued by PW Skills</p>
-                    <a href="certificates.pdf" target="_blank">
-                        <img src="https://img.shields.io/badge/View%20Certificate-0077B5?style=for-the-badge&logo=readthedocs&logoColor=white" alt="View Certificate">
-                    </a>
-                </div>
-                <div class="certification">
-                    <img src="icon.pack/NAS-logo.webp" alt="NAS_logo" class="certification-logo" style="width: 100px; height: 100px;">
-                    <h3>GST Filing and Tax Compliance</h3>
-                    <p>Issued by NAS ENTERPRISES</p>
-                    <a href="certificates/NAS-internship.pdf" target="_blank">
-                        <img src="https://img.shields.io/badge/View%20Certificate-0077B5?style=for-the-badge&logo=readthedocs&logoColor=white" alt="View Certificate">
-                    </a>
-                </div>
-                <div class="certification">
-                    <img src="icon.pack/edureka-logo.png" alt="Edureka_logo" class="certification-logo" style="width: 100px; height: 100px;">
-                    <h3>Data Science and Machine Learning Intern</h3>
-                    <p>Issued by Edureka</p>
-                    <a href="certificates/Edureka - Internship Certificate.pdf" target="_blank">
-                        <img src="https://img.shields.io/badge/View%20Certificate-0077B5?style=for-the-badge&logo=readthedocs&logoColor=white" alt="View Certificate">
-                    </a>
-                </div>
-            </div>
-        </section>
-        <div id="contact" class="contact-section fade-in">
-            <h2>Contact Me</h2>
-            <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSf49ycc-8suruayy1v82SGbfVt16U0fCU2JNbOkMSVWSy1EeQ/formResponse" method="POST" onsubmit="return validateRecaptcha()">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="entry.2025366727" placeholder="Your Name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="entry.715292585" placeholder="Your Email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="entry.495893917" rows="5" placeholder="Your Message" required></textarea>    
-                <button type="submit" class="contact-submit-btn">Send Message</button>
+            <a href="certificates/Avinesh_Masih_Resume.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contect-right">
+            <h2>Contact Form</h2>
+            <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSf49ycc-8suruayy1v82SGbfVt16U0fCU2JNbOkMSVWSy1EeQ/formResponse" method="POST" onsubmit="return handleFormSubmit(event)">
+              <label for="name"></label>
+              <input type="text" id="name" name="entry.2025366727" placeholder="Your Name" required>
+              
+              <label for="email"></label>
+              <input type="email" id="email" name="entry.715292585" placeholder="Your Email" required>
+              
+              <label for="message"></label>
+              <textarea id="message" name="entry.495893917" rows="5" placeholder="Your Message" required></textarea>    
+              <button type="submit" class="btn btn2">Send Message</button>
             </form>
             <div id="successMessage" style="display:none;">
-                Thank you for contacting us! Your submission was successful.
+              Thank you for contacting us! Your submission was successful.
             </div>
-        </div>              
-    <footer class="footer fade-in">
-        <h2>Connect with Me</h2>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/avineshlko" target="_blank" class="social-link">
-                <img src="icon.pack/linkedin_icon.svg" alt="LinkedIn" class="social-icon">
-            </a>
-            <a href="https://github.com/avinesh-masih" target="_blank" class="social-link">
-                <img src="icon.pack/github_icon.svg" alt="GitHub" class="social-icon">
-            </a>
-            <a href="mailto:skmasih11@gmail.com" target="_blank" class="social-link">
-                <img src="icon.pack/gmail_icon.svg" alt="Email" class="social-icon">
-            </a>
+          </div>
         </div>
-        <p>© 2025 AVINESH MASIH | Made with ❤️ | All Rights Reserved</p>
-    </footer>  
-    <script src="script.js" defer></script>
+      </div>
+      <div class="copyright">
+        <p>© 2025 AVINESH MASIH | Made with ❤️ | All Rights Reserved <i class="fa-solid fa-heart"></i></p>
+      </div>
+    </div>
     <script>
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-            const menuButton = document.querySelector('.menu');
-            menuButton.classList.toggle('opened');
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
     </script>
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="avineshlko" data-description="Support me on Buy me a coffee!" data-message="Buy me a coffee!" data-color="#ffdd00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-</body>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      function handleFormSubmit(event) {
+        event.preventDefault();
+        var form = document.getElementById('contact-form');
+        var formData = new FormData(form);
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', form.action, true);
+        xhr.setRequestHeader('Accept', 'application/json');
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+            alert('Message sent successfully');
+            form.reset();
+          }
+        };
+        xhr.send(formData);
+      }
+    </script>
+    <script src="scripts.js"></script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="avineshlko" data-description="Support me on Buy me a coffee!" data-message="Buy me a coffee!" data-color="#FF0000" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+  </body>
 </html>
