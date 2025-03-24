@@ -17,6 +17,7 @@
     background-image: url(icon.pack/header_banner.jpg);
     background-size: cover;
     background-position: center;
+    position: relative; /* Added to ensure the header image does not come under the header menu */
   }
   .container {
     padding: 10px 10%;
@@ -26,6 +27,8 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative; /* Added to ensure the header image does not come under the header menu */
+    z-index: 1; /* Added to ensure the header image does not come under the header menu */
   }
   .logo {
     width: 140px;
@@ -427,6 +430,8 @@ form .btn2 {
   @media only screen and (max-width: 600px) {
     #header {
       background-image: url(icon.pack/header_phone.jpg);
+      background-size: cover; /* Ensure the image covers the header area */
+      background-position: top 20px; /* Position the image a little bit more down */
     }
     .header-text {
       margin-top: 100%;
@@ -483,4 +488,3 @@ form .btn2 {
       font-size: 14px;
     }
   }
-  
