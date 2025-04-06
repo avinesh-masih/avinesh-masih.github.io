@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: "Be Vietnam Pro", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #060606;
+  flex-direction: column;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding-top: 2rem; /* Add padding to ensure the card is below the header */
+  background-image: none; /* Remove background image */
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+  max-width: none;
+  background-color: transparent;
+  border-radius: 0;
+  position: relative;
+  border: none;
+  background-clip: padding-box;
+  text-align: center;
+  color: #f1f3f3;
+  background-image: none;
+  height: 100%;
+}
+
+.profile-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Adjust height to fit content */
+  width: 100%;
+  margin-top: 18rem; /* Increase top margin for spacing */
+  padding-top: 1rem; /* Reduce padding for better alignment */
+}
+
+.card {
+  background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
+  border-radius: 20px; /* Increase border radius for a smoother look */
+  padding: 2rem; /* Adjust padding for better spacing */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6); /* Enhance shadow for depth */
+  text-align: center;
+  width: 95%; /* Increase width slightly */
+  max-width: 400px; /* Increase max width for better fit */
+  margin: 0 auto; /* Center the card horizontally */
+  position: relative; /* Required for pseudo-elements */
+  overflow: hidden; /* Ensure the glow effect stays within the card */
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px; /* Match the card's border radius */
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.5));
+  z-index: -1; /* Place behind the card content */
+  animation: glowing-border 2s linear infinite;
+}
+
+@keyframes glowing-border {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.profile-image {
+  margin: 0 auto 1.5rem; /* Add more spacing below the image */
+  border: 4px solid #fff; /* Slightly thicker border */
+  border-radius: 50%;
+  overflow: hidden;
+  width: 130px; /* Increase image size */
+  height: 130px;
+  position: relative;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile-username {
+  font-size: 1.5rem; /* Reduce font size for username */
+  font-weight: 700; /* Make the username bolder */
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.profile-user-handle {
+  color: #a0a0a0; /* Lighter gray for better contrast */
+  font-size: 0.9rem; /* Reduce font size for handle */
+  margin-bottom: 1.5rem; /* Adjust spacing below handle */
+}
+
+.profile-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.profile-actions > * {
+  margin: 0 0.25rem;
+}
+
+.btn {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1;
+  transition: 0.15s ease;
+}
+
+.btn--primary {
+  border-radius: 99em;
+  background-color: #3772ff;
+  background-image: linear-gradient(135deg, #5587ff, #3772ff);
+  color: #fff;
+  padding: 0 1.375em;
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+  background-size: 150%;
+}
+
+.btn--icon {
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  border: 3px solid #343945;
+  color: #7d8396;
+}
+
+.btn--icon:hover,
+.btn--icon:focus {
+  border-color: #7d8396;
+}
+
+.copy-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #7d8396;
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
+}
+
+.copy-btn:hover {
+  color: #3772ff;
+}
+
+.profile-links {
+  margin-top: 2rem; /* Reduce spacing above links */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* Reduce gap between links */
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #d1d1d1; /* Softer text color */
+  font-size: 1rem; /* Adjust font size for smaller links */
+  padding: 0.75rem 1.5rem; /* Reduce padding for better fit */
+  border: 2px solid #d1d1d1;
+  border-radius: 12px; /* More rounded corners */
+  width: 85%; /* Adjust width for better alignment */
+  max-width: 420px;
+  transition: all 0.3s ease;
+}
+
+.link i {
+  margin-right: 0.4rem;
+  font-size: 1rem; /* Adjust icon size */
+}
+
+.link:hover {
+  transform: scale(1.05); /* Add a slight zoom effect on hover */
+  background-color: #3772ff;
+  color: #fff;
+  border-color: #3772ff;
+}
+
+/* Specific hover colors for each platform */
+.link:nth-child(1):hover { /* Portfolio */
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.link:nth-child(2):hover { /* Facebook */
+  background-color: #1877f2;
+  border-color: #1877f2;
+}
+
+.link:nth-child(3):hover { /* Instagram */
+  background-color: #e4405f;
+  border-color: #e4405f;
+}
+
+.link:nth-child(4):hover { /* LinkedIn */
+  background-color: #0077b5;
+  border-color: #0077b5;
+}
+
+.link:nth-child(5):hover { /* GitHub */
+  background-color: #333;
+  border-color: #333;
+}
+
+.link:nth-child(6):hover { /* Spotify */
+  background-color: #1db954;
+  border-color: #1db954;
+}
+
+.link:nth-child(7):hover { /* Discord */
+  background-color: #5865f2;
+  border-color: #5865f2;
+}
+
+.link:nth-child(8):hover { /* YouTube */
+  background-color: #ff0000;
+  border-color: #ff0000;
+}
+
+/* Small devices */
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: none; /* Ensure no background image for small devices */
+  }
+}
