@@ -488,3 +488,38 @@ form .btn2 {
       font-size: 14px;
     }
   }
+
+.btn--connect {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem; /* Increased font size */
+  font-weight: 600;
+  padding: 0.6rem 1.2rem; /* Slightly increased padding */
+  border-radius: 100px; /* Slightly smaller border radius */
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn--connect i {
+  margin-right: 0.4rem;
+  font-size: 1.1rem; /* Slightly increased icon size */
+}
+
+.btn--connect:hover {
+  background-color: #ff004f;
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 768px) {
+  .btn--connect {
+    font-size: 0.9rem; /* Adjusted font size for smaller screens */
+    padding: 0.5rem 1rem; /* Adjusted padding for smaller screens */
+  }
+
+  .btn--connect i {
+    font-size: 1rem; /* Adjusted icon size for smaller screens */
+  }
+}
