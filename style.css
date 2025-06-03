@@ -14,7 +14,7 @@
   #header {
     width: 100%;
     height: 100vh;
-    background-image: url(icon.pack/header_banner.jpg);
+    background-image: url(icon.pack/banner_header.svg);
     background-size: cover;
     background-position: center;
     position: relative; /* Added to ensure the header image does not come under the header menu */
