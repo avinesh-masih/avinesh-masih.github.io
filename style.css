@@ -199,14 +199,14 @@
 }
 
 /* SKILLS SECTION */
-#skills-section .skills-list {
+#skills .skills-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
 }
 
-#skills-section .badge {
+#skills .badge {
   background-color: black;
   border-radius: 5px;
   padding: 10px 20px;
@@ -216,14 +216,16 @@
   font-size: 16px;
   color: white;
   transition: all 0.3s ease;
+  border: 2px solid #ffffff40; /* Add white border to each badge */
 }
 
-#skills-section .badge i {
+#skills .badge i {
   font-size: 20px;
   color: white;
+
 }
 
-#skills-section .badge:hover {
+#skills .badge:hover {
   background-color: black;
   color: white;
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
