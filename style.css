@@ -207,7 +207,7 @@
 }
 
 #skills .badge {
-  background-color: black;
+  background-color: rgba(123, 123, 123, 0.344);
   border-radius: 5px;
   padding: 10px 20px;
   display: flex;
@@ -216,7 +216,7 @@
   font-size: 16px;
   color: white;
   transition: all 0.3s ease;
-  border: 2px solid #ffffff40; /* Add white border to each badge */
+  border: 2px solid #808080; /* Gray border to make icons more visible */
 }
 
 #skills .badge i {
